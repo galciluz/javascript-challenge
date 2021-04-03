@@ -13,3 +13,6 @@ We need to write code that will create a table dynamically based upon a [dataset
 You can handle this... right? The planet Earth needs to know what we have found!
 
 ## Results
+
+![screenshot1](image/screenshot1.png)
+![screenshot2](image/screenshot2.png)
