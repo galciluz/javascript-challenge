@@ -1,10 +1,6 @@
 // from data.js
 var tableData = data;
-var checkDate=false;
-var checkCity=false;
-var checkCountry=false;
-var checkState=false;
-var checkShape = false;
+
 // YOUR CODE HERE!
 
 // Select the button
@@ -17,7 +13,11 @@ button.on("click", runEnter);
 
 
 function runEnter() {
-
+  var checkDate=false;
+  var checkCity=false;
+  var checkCountry=false;
+  var checkState=false;
+  var checkShape = false;
   // Prevent the page from refreshing
   d3.event.preventDefault();
   // Select the input element and get the raw HTML node
@@ -63,6 +63,9 @@ function runEnter() {
   if (inputShape !== "") {
       checkShape=true;
       filteredData = filteredData.filter(ovni => ovni.shape === inputShape);
+  };
+  if (checkDate===false && checkCountry===false && checkState===false && checkCity===false && checkShape===false){
+    filteredData="";
   };
     
   console.log(filteredData); 
